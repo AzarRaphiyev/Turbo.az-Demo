@@ -236,6 +236,7 @@ function carsSearch() {
 
 let selectArr = [];
 function printModels() {
+  
   arr.map((item) => {
     !selectArr.some((i) => i == item.marka) && selectArr.push(item.marka);
   });
@@ -425,5 +426,6 @@ function createNewCar() {
     mator.value = "";
     qiymet.value = "";
   }
+  printModels();
   printCards();
 }
