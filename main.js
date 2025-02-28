@@ -13,6 +13,7 @@ const reng = document.getElementById("reng");
 const il = document.getElementById("il");
 const mator = document.getElementById("mator");
 const qiymet = document.getElementById("qiymet");
+const footerNav = document.getElementById("footerNav");
 
 let cardsNum = 8;
 const arr = [
@@ -405,6 +406,13 @@ function printModels() {
   );
 }
 printModels();
+
+function footerNavCreate(){
+  selectArr.forEach(
+    (item) =>
+      (footerNav.innerHTML += `<li value="${item}">${item}</li>`)
+  );
+}
 
 function printAutoSalons() {
   cards.innerHTML = "";
