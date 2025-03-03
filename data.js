@@ -2,7 +2,7 @@ const arr = [
   {
     id: 1,
     marka: "Mercedes",
-    qiymet: "10500",
+    qiymet: 10500,
     model: "w202",
     mator: "2.0",
     il: "1998",
@@ -12,7 +12,7 @@ const arr = [
   {
     id: 2,
     marka: "Kia",
-    qiymet: "21000",
+    qiymet: 21000,
     model: "Rio",
     mator: "1.4",
     il: "2014",
@@ -22,7 +22,7 @@ const arr = [
   {
     id: 3,
     marka: "Hyundai",
-    qiymet: "12000",
+    qiymet: 12000,
     model: "Tucson",
     mator: "2.0",
     il: "2014",
@@ -32,7 +32,7 @@ const arr = [
   {
     id: 4,
     marka: "LADA (VAZ)",
-    qiymet: "35000",
+    qiymet: 35000,
     model: "2107",
     mator: "1.6",
     il: "2010",
@@ -42,7 +42,7 @@ const arr = [
   {
     id: 5,
     marka: "BMW",
-    qiymet: "28700",
+    qiymet: 28700,
     model: "M5 e39",
     mator: "4.4",
     il: "1998",
@@ -52,7 +52,7 @@ const arr = [
   {
     id: 6,
     marka: "Mercedes",
-    qiymet: "86500",
+    qiymet: 86500,
     model: "CLS",
     mator: "5.5",
     il: "2013",
@@ -62,7 +62,7 @@ const arr = [
   {
     id: 7,
     marka: "Toyota",
-    qiymet: "54000",
+    qiymet: 54000,
     model: "Camry",
     mator: "3.0",
     il: "2021",
@@ -72,7 +72,7 @@ const arr = [
   {
     id: 8,
     marka: "Porche",
-    qiymet: "118400",
+    qiymet: 118400,
     model: "911 Carrera",
     mator: "4.4",
     il: "2023",
@@ -82,7 +82,7 @@ const arr = [
   {
     id: 9,
     marka: "Dodge",
-    qiymet: "38500",
+    qiymet: 38500,
     model: "Challenger",
     mator: "7.2",
     il: "2018",
@@ -92,7 +92,7 @@ const arr = [
   {
     id: 10,
     marka: "Nissan",
-    qiymet: "86000",
+    qiymet: 86000,
     model: "GTR R-35",
     mator: "3.0",
     il: "2014",
@@ -102,7 +102,7 @@ const arr = [
   {
     id: 11,
     marka: "Audi",
-    qiymet: "124100",
+    qiymet: 124100,
     model: "RS7",
     mator: "4.0",
     il: "2015",
@@ -112,7 +112,7 @@ const arr = [
   {
     id: 12,
     marka: "Toyota",
-    qiymet: "15800",
+    qiymet: 15800,
     model: "Corolla",
     mator: "1.6",
     il: "2016",
@@ -122,7 +122,7 @@ const arr = [
   {
     id: 13,
     marka: "Honda",
-    qiymet: "18500",
+    qiymet: 18500,
     model: "Civic",
     mator: "1.8",
     il: "2017",
@@ -132,7 +132,7 @@ const arr = [
   {
     id: 14,
     marka: "Volkswagen",
-    qiymet: "23200",
+    qiymet: 23200,
     model: "Golf",
     mator: "2.0",
     il: "2019",
@@ -142,7 +142,7 @@ const arr = [
   {
     id: 15,
     marka: "Mazda",
-    qiymet: "22500",
+    qiymet: 22500,
     model: "CX-5",
     mator: "2.5",
     il: "2019",
@@ -152,7 +152,7 @@ const arr = [
   {
     id: 16,
     marka: "Ford",
-    qiymet: "28000",
+    qiymet: 28000,
     model: "Focus",
     mator: "1.6",
     il: "2020",
@@ -162,7 +162,7 @@ const arr = [
   {
     id: 17,
     marka: "Chevrolet",
-    qiymet: "17800",
+    qiymet: 17800,
     model: "Malibu",
     mator: "1.5",
     il: "2018",
@@ -172,7 +172,7 @@ const arr = [
   {
     id: 18,
     marka: "Honda",
-    qiymet: "18300",
+    qiymet: 18300,
     model: "Accord",
     mator: "2.4",
     il: "2017",
@@ -182,7 +182,7 @@ const arr = [
   {
     id: 19,
     marka: "Nissan",
-    qiymet: "23000",
+    qiymet: 23000,
     model: "Altima",
     mator: "2.5",
     il: "2021",
@@ -192,7 +192,7 @@ const arr = [
   {
     id: 20,
     marka: "Volkswagen",
-    qiymet: "26500",
+    qiymet: 26500,
     model: "Passat",
     mator: "2.0",
     il: "2020",
@@ -202,7 +202,7 @@ const arr = [
   {
     id: 21,
     marka: "BMW",
-    qiymet: "50000",
+    qiymet: 50000,
     model: "X5",
     mator: "3.0",
     il: "2022",
@@ -212,7 +212,7 @@ const arr = [
   {
     id: 22,
     marka: "Audi",
-    qiymet: "60 000",
+    qiymet: 60000,
     model: "A6",
     mator: "2.0",
     il: "2021",
@@ -222,17 +222,17 @@ const arr = [
   {
     id: 23,
     marka: "Mercedes",
-    qiymet: "85 000",
+    qiymet: 85000,
     model: "E-Class",
     mator: "3.5",
     il: "2021",
     reng: "black",
-    img: "https://avatars.mds.yandex.net/get-autoru-vos/5497741/9f305cae173e8c0d42637f90cbc16252/1200x900",
+    img: "https://avatars.mds.yandex.net/get-autoru-vos/5497741/9f305cae173e8c0d42637f90cbc16252/1200x900"
   },
   {
     id: 24,
     marka: "Toyota",
-    qiymet: "22 000",
+    qiymet: 22000,
     model: "Camry",
     mator: "2.5",
     il: "2018",
@@ -242,7 +242,7 @@ const arr = [
   {
     id: 25,
     marka: "Subaru",
-    qiymet: "23 500",
+    qiymet: 23500,
     model: "Outback",
     mator: "2.5",
     il: "2020",
@@ -252,7 +252,7 @@ const arr = [
   {
     id: 26,
     marka: "Kia",
-    qiymet: "19000",
+    qiymet: 19000,
     model: "Seltos",
     mator: "1.6",
     il: "2021",
@@ -262,7 +262,7 @@ const arr = [
   {
     id: 27,
     marka: "Hyundai",
-    qiymet: "21000",
+    qiymet: 21000,
     model: "Santa Fe",
     mator: "2.4",
     il: "2020",
@@ -272,7 +272,7 @@ const arr = [
   {
     id: 28,
     marka: "Mazda",
-    qiymet: "27500",
+    qiymet: 27500,
     model: "6",
     mator: "2.5",
     il: "2021",
@@ -282,7 +282,7 @@ const arr = [
   {
     id: 29,
     marka: "Ford",
-    qiymet: "35000",
+    qiymet: 35000,
     model: "Explorer",
     mator: "3.5",
     il: "2022",
@@ -292,7 +292,7 @@ const arr = [
   {
     id: 30,
     marka: "Chevrolet",
-    qiymet: "25000",
+    qiymet: 25000,
     model: "Tahoe",
     mator: "5.3",
     il: "2020",

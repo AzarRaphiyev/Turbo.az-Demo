@@ -17,7 +17,7 @@ const footerNav = document.getElementById("footerNav");
 const swipercard = document.getElementById("swipercard");
 function swipercardprint() {
   arr
-    .sort((a, b) => parseInt(a.qiymet) - parseInt(b.qiymet))
+    .sort((a, b) => a.qiymet - b.qiymet)
     .map(
       (item) =>
         (swipercard.innerHTML += `<div class="swiper-slide rounded">
