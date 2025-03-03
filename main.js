@@ -25,7 +25,8 @@ function swipercardprint() {
   <img src="${item.img}" alt="" class="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500">
 <div class="flex flex-col justify-between p-6 space-y-8">
 <div class="space-y-2">
-<h2 class="text-xl font-semibold tracking-wide">${item.qiymet}</h2>
+<h2 class="text-2xl font-semibold tracking-wide">${item.marka}-${item.model} </h2>
+<h2 class="text-md font-semibold tracking-wide">${item.qiymet} AZN</h2>
 </div>
 </div>
 </div>
