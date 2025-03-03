@@ -6,6 +6,11 @@
     <title>Turbo.az</title>
     <link rel="stylesheet" href="src/output.css" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
       rel="shortcut icon"
       href="favicon-192x192-ad156dea797e1d05604d12bf4c3f9e0285bc9f34429a3306f70a3cd3401a8df9.png"
       type="image/x-icon"
@@ -200,6 +205,11 @@
       </div>
     </section>
     <main class="container flex flex-wrap flex-col justify-center gap-3 m-5">
+      <div class="container swiper mySwiper">
+        <div id="swipercard" class="container swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
       <div
         id="cards"
         class="py-[30px] flex justify-center items-center gap-[20px] flex-wrap"
@@ -207,7 +217,7 @@
 
       <div
         id="sidebar"
-        class="flex fixed transition-all w-[30vw] h-[100vh] top-0 right-[-30vw] flex-col max-w-3xl p-6 space-y-4 sm:p-10 dark:bg-red-700 dark:text-gray-100"
+        class="flex fixed z-30 transition-all w-[30vw] h-[100vh] top-0 right-[-30vw] flex-col max-w-3xl p-6 space-y-4 sm:p-10 dark:bg-red-700 dark:text-gray-100"
       >
         <div class="flex justify-between items-center">
           <h2 class="text-xl font-semibold">Sənin səbətin</h2>
@@ -261,7 +271,8 @@
       <div
         class="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-600"
       >
-        <ul id="footerNav"
+        <ul
+          id="footerNav"
           class="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start"
         >
           <li>Shop</li>
@@ -273,6 +284,27 @@
       </div>
     </footer>
 
+    <script src="data.js"></script>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
