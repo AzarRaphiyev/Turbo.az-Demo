@@ -15,28 +15,8 @@ const mator = document.getElementById("mator");
 const qiymet = document.getElementById("qiymet");
 const footerNav = document.getElementById("footerNav");
 const swipercard = document.getElementById("swipercard");
-function swipercardprint() {
-  arr
-    .sort((a, b) => a.qiymet - b.qiymet)
-    .map(
-      (item) =>
-        (swipercard.innerHTML += `<div class="swiper-slide rounded">
-    <div class="max-w-xs rounded-xl shadow-md dark:bg-gray-50 dark:text-gray-800">
-  <img src="${item.img}" alt="" class="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500">
-<div class="flex flex-col justify-between p-6 space-y-8">
-<div class="space-y-2">
-<h2 class="text-2xl font-semibold tracking-wide">${item.marka}-${item.model} </h2>
-<h2 class="text-md font-semibold tracking-wide">${item.qiymet} AZN</h2>
-</div>
-</div>
-</div>
-   </div>
-   `)
-    );
-}
-swipercardprint();
 
-let cardsNum = 8;
+let cardsNum = 4;
 
 printCards();
 function printCards() {
@@ -52,7 +32,7 @@ function printCards() {
                             <img   src="${item.img}" alt="" class="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" >
                             <div class="mt-6 mb-2">
                                 <h2 class="text-xl font-bold tracking-wide mb-2 "><a>${item.qiymet} Azn</a></h2>
-                                <span onclick="printCarDetails(${item.id})" class=" cursor-pointer block text-xs font-medium tracking-widest uppercase dark:text-violet-600" >${item.marka}</span>
+                                <a href="./detail.htm?id=${item.id}" onclick="printCarDetails(${item.id})" class=" cursor-pointer block text-xs font-medium tracking-widest uppercase dark:text-violet-600" >${item.marka}</a>
                             </div>
                             <p class="dark:text-gray-800">${item.il} il, ${item.mator} mator, ${item.reng}</p>
                           <button onclick="addBasket(${item.id})" style="background-color: #7ed321" type="button" class="hidden  py-2 px-1 mt-3 font-semibold rounded-[.5em] lg:block whitespace-nowrap text-gray-50">Səbətə at</button>
@@ -286,3 +266,24 @@ function createNewCar() {
   printModels();
   printCards();
 }
+
+function swipercardprint() {
+  arr
+    .sort((a, b) => a.qiymet - b.qiymet)
+    .map(
+      (item) =>
+        (swipercard.innerHTML += `<div class="swiper-slide rounded">
+    <div class="max-w-xs rounded-xl shadow-md dark:bg-gray-50 dark:text-gray-800">
+  <img src="${item.img}" alt="" class="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500">
+<div class="flex flex-col justify-between p-6 space-y-8">
+<div class="space-y-2">
+<h2 class="text-2xl font-semibold tracking-wide">${item.marka}-${item.model} </h2>
+<h2 class="text-md font-semibold tracking-wide">${item.qiymet} AZN</h2>
+</div>
+</div>
+</div>
+   </div>
+   `)
+    );
+}
+swipercardprint();
